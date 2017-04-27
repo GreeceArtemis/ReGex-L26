@@ -1,0 +1,21 @@
+body{
+  text-align: center;
+}
+.barraMenu{
+  display: inline-block;
+
+}
+.flecha{
+  width: 10px;
+  height: 10px;
+}
+
+.flechaImg{
+  width: 10px;
+  height: 10px;
+}
+.menuDes{
+  background-color: red;
+  color: white;
+  display: block;
+}
