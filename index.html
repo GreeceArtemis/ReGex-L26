@@ -4,32 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/main.css">
   <title>Validaciones</title>
 </head>
 <body>
-  <form action="" method="post" >
+  <h1>ReGex</h1>
+  <form id="formulario" method="post" >
       <p>Nombre:</p>
-      <p><input type="text" id="nombre" placeholder="Ingresa tu Nombre"></p>
+      <input type="text" id="nombre"  title = "Solo letras-La primera letra con mayúscula" placeholder="Ingrese su Nombre" pattern="^([A-Z]{1}[a-z]+[\s]*)+$" required="required">
       <p>Apellido</p>
-      <p><input type="text" id="apellido" placeholder="Ingresa tu Apellido"></p>
+      <p><input type="text" id="apellido" placeholder="Ingresa tu Apellido" pattern="^([A-Z]{1}[a-z]+[\s]*)+$" title = "Solo letras-La primera letra con mayúscula" required="required"></p>
       <p>Documento de Identidad</p>
-      <p><input type="text" id="dni" placeholder="DNI"></p>
+      <p><input type="text" id="dni" pattern="[0-9]{8}" title="Solo Números-8dígitos"placeholder="DNI" required="required"></p>
       <p>Celular</p>
-      <p><input type="text" id="celular" value=""></p>
+      <p><input type="text" id="celular" placeholder="Número de Celular" pattern="^[9][0-9]{8}$" title="Solo Números-9dígitos" required></p>
       <p>Fijo</p>
-      <p><input type="text" id="fijo" value=""></p>
+      <p><input type="text" id="fijo" placeholder="Número Fijo"pattern="[1-9][0-9]{6}$" title="Solo Números-7dígitos" required></p>
       <p>Contraseña</p>
-      <p><input type="text" id="contraseña" value=""></p>
+      <span class="notificacion" id ="nota1">Las contraseñas deben ser iguales</span>
+      <p><input type="password" id="contrasena" placeholder="Ingrese su Contraseña" value=""required></p>
       <p>Confirma tu Contraseña</p>
-      <p><input type="text" id="confirmaContraseña" value=""></p>
+      <p><input type="password" id="confirmaContrasena" placeholder="Ingrese la misma Contraseña"value=""required></p>
       <p>Fecha de Nacimiento:</p>
-      <p><input type="date" id="fecha" value=""></p>
+      <p><input type="date" id="fecha" value="" required></p>
       <p>Comentarios</p>
-      <p><textarea name="comentarios" rows="8" cols="80"></textarea></p>
-      <input type="submit" id="enviar" value="Enviar">
+      <p><textarea name="comentarios" rows="8" cols="30" required></textarea></p>
+      <input type="submit" id="enviar" value="Enviar" />
   </form>
-
-
 
 <script src="assets/js/main.js" type="text/javascript">
 
